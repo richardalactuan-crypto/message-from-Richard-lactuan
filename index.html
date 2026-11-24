@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Letter for My Friend</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg,#ff758c,#ffb6c1);
+    font-family: Georgia, serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 430px;
+    text-align: center;
+}
+
+#letter {
+    display: none;
+    background: #fffdf3;
+    color: #333;
+    padding: 30px 25px;
+    border-radius: 15px;
+    text-align: left;
+    line-height: 1.8;
+    box-shadow: 0 10px 30px #0003;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: #e84375;
+    text-align: center;
+}
+
+button {
+    background: #e84375;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.joke {
+    background: #ffe0e9;
+    color: #d6336c;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.signature {
+    text-align: right;
+    color: #e84375;
+    font-weight: bold;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<div id="welcome">
+    <div style="font-size:100px">💌</div>
+    <h1>You Have a Surprise!</h1>
+    <p style="color:white">A special message for you ❤️</p>
+    <button onclick="showLetter()">OPEN MY LETTER 💗</button>
+</div>
+
+<div id="letter">
+
+    <h2>💌 Dear Friend,</h2>
+
+    <p>
+    Hello, my friend! Thank you for being part of my life.
+    I hope our friendship will last forever.
+    </p>
+
+    <p><b>Always remember:</b></p>
+
+    <div class="joke">
+    “Bahu nga otot, nigawas sa lobot, agi sa panuhot!” 😂
+    </div>
+
+    <p>Ayaw kalimot og pa otog!</p>
+
+    <div class="joke">
+    Bahalag Bogo basta cute! 🤣
+    </div>
+
+    <p>Thank you for being my friend! ❤️</p>
+
+    <div class="signature">
+    Your funny friend,<br>
+    Richard Lactuan ❤️
+    </div>
+
+</div>
+
+</div>
+
+<script>
+function showLetter() {
+    document.getElementById("welcome").style.display = "none";
+    document.getElementById("letter").style.display = "block";
+}
+</script>
+
+</body>
+</html>
